@@ -1,0 +1,25 @@
+# ===================================
+# | Parameters for SHELFICE package |
+# ===================================
+ &SHELFICE_PARM01
+#
+ SHELFICEtopoFile = 'shelfice_topo_extendedDom_extent18km.bin',
+ SHELFICEloadAnomalyFile = 'phi0surf_extendedDom_extent18km.bin',
+ SHELFICEwriteState = .TRUE.,
+#
+ SHELFICEconserve = .TRUE.,
+ SHELFICEboundaryLayer = .TRUE.,
+ useISOMIPTD = .FALSE.,
+ SHELFICEuseGammaFrict = .TRUE.,
+ SHELFICEadvDiffHeatFlux = .false.,
+#
+ shiCdrag = 1.0E-3,
+ SHELFICEheatTransCoeff = 0.0278,
+ SHELFICEsaltTransCoeff = 7.9429E-4,
+#
+ no_slip_shelfice = .FALSE.,
+ SHELFICEDragQuadratic = 2.5E-3,
+ SHELFICEDragLinear = 0.0,
+#
+ /
+

@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# To be used with the suite of GCC compilers (PrgEnv-gnu).
+
+CC='cc'
+FC='ftn'
+F90C='ftn'
+
+DEFINES='-DWORDLENGTH=4 -D_BYTESWAPIO -DHAVE_LAPACK -DNML_TERMINATOR'
+CPP='cpp -traditional -P'
+EXTENDED_SRC_FLAG='-Mextend'
+GET_FC_VERSION="--version"
+CHECK_FOR_LAPACK=t
+FC_CHECK=f
+
+INCLUDES='-I${NETCDF_DIR}/include -I${CRAY_MPICH_BASEDIR}/gnu/9.1/include'
+LIBS='-L${NETCDF_DIR}/lib -L${CRAY_MPICH_BASEDIR}/gnu/9.1/lib'
+
+NOOPTFLAGS='-O0'
+NOOPTFILES=''
+
+FFLAGS='-fallow-argument-mismatch'
+FOPTIM='-O3 -funroll-loops'
+
